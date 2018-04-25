@@ -1,7 +1,10 @@
 .page-header {
     background-color: #ff9400;
     margin-top: 0;
-    padding: 20px 20px 20px 40px;
+    padding: 10px 10px 10px 15px;
+    text-align: center;
+
+
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
@@ -11,7 +14,7 @@
 }
 
 .content {
-    margin-left: 40px;
+    margin-left: 250px;
 }
 
 h1, h2, h3, h4 {
@@ -43,4 +46,42 @@ h1, h2, h3, h4 {
 
 .post h1 a, .post h1 a:visited {
     color: #000000;
+}
+
+.paragraph{
+font-size: 25px;
+}
+
+
+
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 200px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0px; /* Stay at the top */
+    left: 0;
+    background-color: blue; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 103px;
+
+
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f2f2f2;
+    display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    background-color: red;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 10px;}
 }

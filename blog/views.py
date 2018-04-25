@@ -42,3 +42,17 @@ def post_edit(request, pk):
     else:
         form = PostForm(instance=post)
     return render(request, 'blog/post_edit.html', {'form': form})
+
+def all_post(request):
+    posts=Post.objects.filter(published_date__lte=timezone.now())
+    posts=posts.order_by('published_date')
+    return render(request,'blog/all_post.html',{'posts':posts})
+
+def home(request):
+    return render(request, 'blog/home.html', { })
+
+def about(request):
+    return render(request, 'blog/about.html', { })
+
+def contact(request):
+    return render(request, 'blog/contact.html', { })
